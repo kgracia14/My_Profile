@@ -23,7 +23,7 @@
                         "navigation navigation"
                         "left right";
   grid-template-columns: 50% 50%;
-  grid-template-rows: 95px 60px 1600px;
+  grid-template-rows: 95px 60px 16<00px;
   align-items: center;
   justify-content: space-evenly;
 }
