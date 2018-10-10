@@ -8,7 +8,22 @@
                         "navigation navigation"
                         "left right";
   grid-template-columns: 50% 50%;
-  grid-template-rows: 90px 60px 400px;
+  grid-template-rows: 95px 60px 400px;
+  align-items: center;
+
+}
+
+.specialcontainer {
+  display: grid;
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  grid-gap: 10px;
+  grid-template-areas:  "header header"
+                        "navigation navigation"
+                        "left right";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 95px 60px 1600px;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -62,8 +77,8 @@ nav a {
   color: dodgerblue;
   display: inline-block;
   text-decoration: none;
-  padding-right: 61px;
-  padding-left: 61px;
+  padding-right: 40px;
+  padding-left: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
   border: 1px solid dodgerblue;
@@ -79,6 +94,28 @@ nav a:hover {
 .left {
   background-color: white;
   grid-area: left;
+  font-family: Garamond;
+  font-size: 19px;
+
+}
+
+.left img {
+  display: block;
+  padding-bottom: 20px;
+  width: 430px;
+  margin-left: 0px;
+  -webkit-filter: brightness(100%);
+  -webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+     -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+        transition: all 1s ease;
+
+}
+
+.left img:hover {
+  width: 450px;
+  -webkit-filter: brightness(70%);
 
 }
 
@@ -87,6 +124,26 @@ nav a:hover {
   grid-area: right;
   font-family: Garamond;
   font-size: 19px;
+
+}
+
+.right img {
+  display: block;
+  padding-bottom: 20px;
+  width: 430px;
+  margin-left: 0px;
+  -webkit-filter: brightness(100%);
+  -webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+     -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+        transition: all 1s ease;
+
+}
+
+.right img:hover {
+  width: 450px;
+  -webkit-filter: brightness(70%);
 
 }
 
@@ -130,24 +187,6 @@ nav a:hover {
   margin-left: -10px;
 
 
-}
-
-
-.left img {
-  display: block;
-  padding-bottom: 20px;
-  width: 430px;
-  margin-left: 0px;
-  -webkit-transition: all 1s ease;
-   -moz-transition: all 1s ease;
-     -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-        transition: all 1s ease;
-
-}
-
-.left img:hover {
-  width: 450px;
 }
 
 .center {
