@@ -1,12 +1,14 @@
+body {
+    position: relative;
+}
+
 .container {
   display: grid;
   max-width: 900px;
   position: relative;
   margin: auto;
   grid-gap: 10px;
-  grid-template-areas:  "header header"
-                        "navigation navigation"
-                        "left right";
+  grid-template-areas: "header header" "navigation navigation" "left right";
   grid-template-columns: 50% 50%;
   grid-template-rows: 95px 60px 400px;
   align-items: center;
@@ -19,13 +21,11 @@
   position: relative;
   margin: auto;
   grid-gap: 10px;
-  grid-template-areas:  "header header"
-                        "navigation navigation"
-                        "left right";
+  grid-template-areas: "header header" "navigation navigation" "left right";
   grid-template-columns: 50% 50%;
-  grid-template-rows: 95px 60px 16<00px;
+  grid-template-rows: 95px 60px 1600px;
   align-items: center;
-  justify-content: space-evenly;
+  padding-left: 17px;  // quick fix- need solution
 }
 
 .header {
@@ -166,15 +166,16 @@ nav a:hover {
 
 .right ul {
   list-style: none;
-  line-height: 40px;
+
 
 }
 
 .right ul li{
--webkit-transition: all 1s ease;
- -moz-transition: all 1s ease;
+  padding-bottom: 30px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
    -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
+   -ms-transition: all 1s ease;
       transition: all 1s ease;
 
 }
